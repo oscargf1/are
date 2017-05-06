@@ -1,10 +1,9 @@
 package com.example.oigarcia.are;
 
-import android.content.Intent;
 import android.app.Activity;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.CheckBox;
@@ -92,8 +91,11 @@ public class Registro extends Activity implements View.OnClickListener {
       }
 
     public void salir (View v){
-        Intent salida=new Intent( Intent.ACTION_MAIN); //Llamando a la activity principal
         finish();
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
 
     }
 

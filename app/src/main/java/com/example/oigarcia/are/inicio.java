@@ -1,9 +1,7 @@
 package com.example.oigarcia.are;
 
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -23,8 +21,8 @@ public class inicio extends Activity implements View.OnClickListener {
     }
 
     public void salir (View v){
-        Intent salida=new Intent( Intent.ACTION_MAIN); //Llamando a la activity principal
-        finish();
+        System.exit(0);
+
 
     }
 

@@ -15,15 +15,18 @@
         android:orientation="vertical"
         android:weightSum="1"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteY="0dp">
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="74dp"
-            android:layout_height="wrap_content"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
             android:layout_gravity="right"
-            android:onClick="salir"
-            app:srcCompat="@android:drawable/ic_lock_power_off" />
+            android:layout_margin="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cerrar"
+            android:onClick="salir" />
 
         <TextView
             android:id="@+id/textView7"
@@ -65,14 +68,13 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="308dp"
-            android:layout_marginBottom="15dp"
-            android:layout_marginTop="15dp"
-            android:maxHeight="308dp"
-            android:maxWidth="308dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/are" />
+            android:layout_width="197dp"
+            android:layout_height="173dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="40dp"
+            android:background="@drawable/ini"
+            android:scaleType="center"
+            android:layout_weight="0.15" />
 
         <Button
             android:id="@+id/button"

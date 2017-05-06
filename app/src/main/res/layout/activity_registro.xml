@@ -16,10 +16,12 @@
 
         <ImageButton
             android:id="@+id/imageButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="47dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:background="@drawable/cerrar"
             android:onClick="salir"
-            app:srcCompat="@android:drawable/ic_lock_power_off"
             tools:layout_editor_absoluteX="-21dp"
             tools:layout_editor_absoluteY="-60dp" />
 
